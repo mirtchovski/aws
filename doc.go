@@ -80,4 +80,4 @@ $ ./aws deregister ami-ffffffff
 
 // Bug(aam): incomplete. AWS has way more commands than we need.
 
-package documentation
+package main
