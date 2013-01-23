@@ -193,7 +193,15 @@ func images(e *ec2.EC2, args ...string) {
 	}
 
 	for _, i := range resp.Images {
-		fmt.Printf("%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\n", i.Id, i.Name, i.State, i.Architecture, i.Type, i.OwnerAlias, i.Description, i.Platform)
+		fmt.Printf("%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\n",
+			i.Id,
+			i.Name,
+			i.State,
+			i.Architecture,
+			i.Type,
+			i.OwnerAlias,
+			i.Description,
+			i.Platform)
 	}
 }
 
