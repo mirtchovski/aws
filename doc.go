@@ -52,32 +52,31 @@ Examples
 
 Find the currently available instances:
 
-$ ./aws instances
-reservation: r-11xxxxxx
-i-aa000000	running	ec2-1.amazonaws.com	ami-xxxxxxxx
-reservation: r-22xxxxxx
-i-bb000000	stopped		ami-yyyyyyyy
-reservation: r-33xxxxxx
-i-cc000000	running	ec2-2.amazonaws.com	ami-zzzzzzzz
+    $ ./aws instances
+    reservation: r-11xxxxxx
+    i-aa000000	running	ec2-1.amazonaws.com	ami-xxxxxxxx
+    reservation: r-22xxxxxx
+    i-bb000000	stopped		ami-yyyyyyyy
+    reservation: r-33xxxxxx
+    i-cc000000	running	ec2-2.amazonaws.com	ami-zzzzzzzz
 
 Find all images belonging to us:
 
-$ ./aws images
-ami-xxxxxxxx	GoogleDocs	available	x86_64	machine		Browser for Google Docs
-ami-yyyyyyyy	GoogleEarth	available	x86_64	machine		Google Earth
-ami-zzzzzzzz	OpenOffice	available	x86_64	machine		Open Office
+    $ ./aws images
+    ami-xxxxxxxx	GoogleDocs	available	x86_64	machine		Browser for Google Docs
+    ami-yyyyyyyy	GoogleEarth	available	x86_64	machine		Google Earth
+    ami-zzzzzzzz	OpenOffice	available	x86_64	machine		Open Office
 
 Clone the running instance i-cc000000's image:
 
-$ ./aws clone i-cc000000 name=test description='this is a test'
-ami-ffffffff
+    $ ./aws clone i-cc000000 name=test description='this is a test'
+    ami-ffffffff
 
 Destroy the newly created image:
 
-$ ./aws deregister ami-ffffffff
+    $ ./aws deregister ami-ffffffff
 
 */
+package documentation
 
-// Bug(aam): incomplete. AWS has way more commands than we need.
-
-package main
+// Bug(aam): Incomplete. AWS has way more commands than we need.
