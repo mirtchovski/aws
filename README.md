@@ -20,8 +20,8 @@ The commands are:
     instances   list instances matching key=value, available filters: http://goo.gl/4No7c
     images      list our images matching key=value, -all for all available filters: http://goo.gl/SRBhW
     deregister  deregister an image. nobody will be able to boot from it afterwards
-    snapshots   list our snapshots matchng key=value
-    snapshot    create snapshot from image_id
+    snapshots   list our snapshots matching key=value
+    snapshot    create snapshot from image
     delete      delete one or more snapshots
     regions     list all available regions
     help        print this message
